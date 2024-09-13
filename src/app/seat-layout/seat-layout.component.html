@@ -1,0 +1,10 @@
+<div class="coach">
+    <div *ngFor="let row of seats" class="seat-row">
+      <div *ngFor="let seat of row" 
+        class="seat" 
+        [ngClass]="{'booked': seat.is_booked, 'available': !seat.is_booked}">
+        {{ seat.seat_id }}
+      </div>
+    </div>
+  </div>
+  

@@ -1,0 +1,19 @@
+.layout-container {
+    display: flex;
+    
+     /* Space between the two components */
+    padding: 20px;
+  }
+  
+  app-booking-window {
+    flex: 1; /* This will allow both components to take up equal width */
+  }
+  app-seat-layout{
+    flex: 2;
+  }
+  @media (max-width: 768px) {
+    .layout-container {
+      flex-direction: column; /* Stack vertically on smaller screens */
+    }
+  }
+  
